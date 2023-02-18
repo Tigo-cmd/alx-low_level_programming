@@ -12,12 +12,13 @@
 int main(void)
 {
 	int i;
-	
+
+	/* my code */
 	while (i < 10)
 	{
-		printf("%d\n", i);
+		printf("%d", i);
 		i++;
 	}
-	
+
 	return (0);
 }
