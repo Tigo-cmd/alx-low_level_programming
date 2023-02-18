@@ -3,10 +3,10 @@
 /**
 * main - Entry point
 *
-* Description - this program prints all single digits
+* Description: this program prints all single digits
 * numbers of 10 starting from 0
 *
-* Return - Always 0 (success)
+* Return: Always 0 (success)
 */
 
 int main(void)
@@ -19,6 +19,7 @@ int main(void)
 		printf("%d", i);
 		i++;
 	}
+	printf("\n");
 
 	return (0);
 }
