@@ -1,34 +1,32 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+#include <stdio.h>
 
 /**
-* main - Entry point
-*
-* Description - this programs checkes wheather a number
-* is positive or negative
-*
-* Return - Always 0 (success)
+ * main - Entry point
+ *
+ * Description: print the value of n status:
+ *              greater than, is zero and is not less than 6.
+ *
+ * Return: Always O (Success)
 */
 
 int main(void)
 {
-	int n;
-	int i;
-	
+	int n, i;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
-	i = n % 10;
-	
-	/* if statement */
+
+	/*my code*/
+	i = n % 10; /*gets last digit*/
+
 	if (i > 5)
-		printf("last digit of %d is %d and is greater than 5\n", n, i);
+		printf("Last digit of %i is %i and is greater than 5\n", n, i);
 	else if (i == 0)
-		printf("the string is 0\n");
+		printf("Last digit of %i is %i and is 0\n", n, i);
 	else if (i < 6 && i != 0)
-		printf("last digit of %d is %d and is less than 6 ande not 0\n", n, i);
+		printf("Last digit of %i is %i and is less than 6 and not 0\n",n, i);
 
 	return (0);
 }
