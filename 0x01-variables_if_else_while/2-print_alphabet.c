@@ -1,25 +1,23 @@
 #include <stdio.h>
 
 /**
-* main - Entry point
-*
-* Description - this programs checkes wheather a number
-* is positive or negative
-*
-* Return - Always 0 (success)
+ * main - Entry point
+ *
+ * Description: print all aplhabet letters
+ *
+ * Return: Always 0 (Success)
 */
 
 int main(void)
 {
-	/* my statement */
-	char i = 'a';
-	
-	for ( char i = 'a'; i <= 'z'; i++)
+	char ch = 'a';
+
+	while (ch <= 'z')
 	{
-		/* code */
-		putchar(i);
+		putchar(ch);
+		++ch;
 	}
 	putchar('\n');
 
-	return(0);
+	return (0);
 }
