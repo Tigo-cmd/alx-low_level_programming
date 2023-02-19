@@ -12,7 +12,9 @@
 int main(void)
 {
 	/* my statement */
-	for (char i = 'a'; i <= 'z'; i++)
+	char i = 'a';
+	
+	for ( char i = 'a'; i <= 'z'; i++)
 	{
 		/* code */
 		putchar(i);
