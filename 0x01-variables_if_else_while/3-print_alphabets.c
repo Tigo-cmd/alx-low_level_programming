@@ -13,7 +13,7 @@
 int main(void)
 {
 	char lower_alpha = 'a';
-	char upper_alpha = 'a';
+	char upper_alpha = 'A';
 
 	while (lower_alpha <= 'z')
 	{
@@ -22,10 +22,10 @@ int main(void)
 		lower_alpha++;
 	}
 
-	while (upper_alpha <= 'z')
+	while (upper_alpha <= 'Z')
 	{
 		/* code */
-		putchar(toupper(upper_alpha));
+		putchar(upper_alpha);
 		upper_alpha++;
 	}
 	putchar('\n');
