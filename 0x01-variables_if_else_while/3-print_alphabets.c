@@ -1,35 +1,32 @@
 #include <stdio.h>
 
-
-/*
-* main - this is the main function
-*
-* Description: this program prints the alpha 
-* in lower and uppercase using putchar function only
-*
-* Return: Always (0) success
+/**
+ * main - Entry point
+ *
+ * Description: print alphabet in lowercase then in uppercase
+ *
+ * Return: Always 0 (Success)
 */
 
 int main(void)
 {
-	char lower_alpha = 'a';
-	char upper_alpha = 'A';
+	char ch = 'a';
+	char CH = 'A';
 
-	while (lower_alpha <= 'z')
+	/*prints a - z*/
+	while (ch <= 'z')
 	{
-		/* code */
-		putchar(lower_alpha);
-		lower_alpha++;
+		putchar(ch);
+		++ch;
 	}
 
-	while (upper_alpha <= 'Z')
+	/*print A - Z*/
+	while (CH <= 'Z')
 	{
-		/* code */
-		putchar(upper_alpha);
-		upper_alpha++;
+		putchar(CH);
+		++CH;
 	}
 	putchar('\n');
 
-	return(0);
-
+	return (0);
 }
