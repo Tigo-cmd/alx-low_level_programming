@@ -1,58 +1,30 @@
-#include <stdio.h>
-#include <ctype.h>
+#include"main.h"
 
 /**
- * _main - main entry
- * 
- * Description: checks input of function
+ * print_sign - print + if n is greater than zero,
+ *             0 if n is zero and - if n is less
+ *             than zero.
  *
- * Return: always 0 (Success)
+ * @n: takes integer type input for function.
+ *
+ * Return: 1 if +, 0 if 0 and -1 if -
 */
 
-int main(void)
+int print_sign(int n)
 {
-	/*Main function*/
-    int r;
-
-    r = print_sign(98);
-    putchar(',');
-    putchar(' ');
-    putchar(r + '0');
-    putchar('\n');
-    r = print_sign(0);
-    putchar(',');
-    putchar(' ');
-    putchar(r + '0');
-    putchar('\n');
-    r = print_sign(0xff);
-    putchar(',');
-    putchar(' ');
-    putchar(r + '0');
-    putchar('\n');
-    r = print_sign(-1);
-    putchar(',');
-    putchar(' ');
-    putchar(r + '0');
-    putchar('\n');
-    return (0);
+	if (n > 0)
+	{
+		_putchar(43 + 0);
+		return (1);
+	}
+	else if (n == 0)
+	{
+		_putchar(0 + 48);
+		return (0);
+	}
+	else
+	{
+		_putchar(45 + 0);
+		return (-1);
+	}
 }
-/*Print_sign function*/
-int print_sign(int c)
- {
-	if (c > 0)
-	{
-		putchar('+');
-		return(1);
-	}
-	else if (c == 0)
-	{
-		putchar('0');
-		return(0);
-	}
-	else if (c < 0 )
-	{
-		putchar('-');
-		return(-1);
-	}
-	return(0);
- }
