@@ -4,6 +4,10 @@
 /**
  * main - check the code
  *
+ * Description: _isalpha function checks for 
+ * alphabetic character.
+ * @c : takes a strand of int.
+ *
  * Return: Always 0.
  */
 
