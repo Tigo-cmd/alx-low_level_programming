@@ -4,7 +4,7 @@
 /**
  * main - check the code
  *
- * _isalpha: function checks for
+ * @_isalpha: function checks for
  * alphabetic character.
  * @c : takes a strand of int.
  *
