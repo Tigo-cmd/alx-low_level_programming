@@ -1,5 +1,5 @@
-#ifndef "MAIN_H"
-#define "MAIN_H"
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdio.h>
 
@@ -12,4 +12,4 @@ char *string_toupper(char *s);
 char *cap_string(char *s);
 char *leet(char *s);
 
-#endif "MAIN_H"
+#endif /* MAIN_H */
