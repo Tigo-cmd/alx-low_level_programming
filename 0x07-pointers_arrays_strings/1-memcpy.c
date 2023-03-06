@@ -1,18 +1,18 @@
 /**
- * _memcpy - function that copies memory area
+ * _memcpy - copies n bytes from source memory to destination
  *
- * @dest: buffer where we will copy to
- * @src: what we are to copy
- * @n: n bytes of @src
+ * @dest: destination to write to
+ * @src: source to copy from
+ * @n: number of bytes to write
  *
- * Return: Always 0 (Success)
-*/
-
-char *_memcpy(char *dest, char *src, unsigned int n)
+ * Return: pointer to dest
+ */
+char *_memcpy(char *dest, char *src, int n)
 {
-	unsigned int i;
+	char *ptr = dest;
 
-	for (i = 0; i < n; i++)
-		dest[i] = src[i];
+	while (n--)
+		*ptr++ = *src++;
+
 	return (dest);
 }
