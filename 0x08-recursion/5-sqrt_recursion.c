@@ -28,7 +28,4 @@ int _sqrt_recursion(int x)
 		return (-1);
 	return (check_sqrt(x, 0));
 }
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
 
