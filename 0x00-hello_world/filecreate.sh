@@ -6,8 +6,7 @@ echo "#include <stdio.h>" > $file
 echo "/**
 * main - Entry point
 *
-* Description: A program that prints the size of
-* various types on the computer it is compiled and run on.
+* Description: A program 
 *
 * Return: 0(success)
 */
