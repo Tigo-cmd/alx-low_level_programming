@@ -1,13 +1,2 @@
-#include <stdio.h>
-/**
-* main - Entry point
-*
-* Description: A program 
-*
-* Return: 0(success)
-*/
-
-int main(void)
-{
-	return (0);		
-}
+#!/bin/bash
+gcc -S -masm=intel $CFILE > main.s
