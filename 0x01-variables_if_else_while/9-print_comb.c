@@ -20,10 +20,6 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
-		if (g == 9)
-		{
-			putchar('$');
-		}
 	}
 	return (0);
 }
