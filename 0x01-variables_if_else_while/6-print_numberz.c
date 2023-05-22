@@ -2,19 +2,20 @@
 /**
 * main - Entry point
 *
-* Description: A program print the alphabeths
-* in reverse order in lowercase
+* Description: A program print the alphabeths without using the char
 *
 * Return: 0(success)
 */
 
 int main(void)
 {
-	char a;
+	int a = 0;
 
-	for (a = 0; a < 10; a++)
+	while (a <= 9)
 	{
-		
+		putchar(a + '0')
+		a = a + 1;
 	}
+	putchar('\n');
 	return (0);
 }
