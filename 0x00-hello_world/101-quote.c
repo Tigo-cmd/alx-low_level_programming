@@ -18,5 +18,6 @@ int main(void)
 	{
 		putchar(wrd[i]);
 	}
-	return (0);
+	putchar('\n');
+	return (1);
 }
