@@ -14,7 +14,7 @@ int main(void)
 
 	while (a <= 9)
 	{
-		putchar(a + '0')
+		putchar(a + '0');
 		a++;
 	}
 	for (c = 'a'; c <= 'f'; c++)
