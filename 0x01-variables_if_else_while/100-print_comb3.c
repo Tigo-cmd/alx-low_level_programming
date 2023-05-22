@@ -16,7 +16,7 @@ int main(void)
 		for (b = a; b <= 9; b++)
 		{
 			putchar(a + '0');
-			putchar(b + '0');
+			putchar(b + '1');
 
 			if (a == 9 || a != 9)
 			{
