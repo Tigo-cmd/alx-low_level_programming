@@ -2,12 +2,28 @@
 /**
 * main - Entry point
 *
-* Description: A program 
+* Description: A program that prints all
+* possible combinations of single-digit numbers.
 *
 * Return: 0(success)
 */
 
 int main(void)
 {
-	return (0);		
+	int g;
+
+	for (g = 0; g <= 9; g++)
+	{
+		putchar(g + '0');
+		if (g != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+		if (g == 9)
+		{
+			putchar('$');
+		}
+	}
+	return (0);
 }
