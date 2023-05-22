@@ -16,9 +16,9 @@ int main(void)
 	{
 		putchar(b);
 		if (b == 'd')
-			a = 'e';
+			b = 'e';
 		if (b == 'p')
-			a = 'q';
+			b = 'q';
 	}
 	putchar('\n');
 	return (0);
