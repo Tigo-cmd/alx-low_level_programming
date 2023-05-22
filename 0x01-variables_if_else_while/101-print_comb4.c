@@ -2,7 +2,7 @@
 /**
 * main - Entry point
 *
-* Description: A program that prints all 
+* Description: A program that prints all
 * possible different combinations of three digits.
 *
 * Return: 0(success)
@@ -11,7 +11,7 @@
 int main(void)
 {
 	int a, b, c;
-	
+
 	for (a = 0; a <= 9; a++)
 	{
 		for (b = a; b <= 9; b++)
@@ -22,7 +22,7 @@ int main(void)
 				putchar(b + '1');
 				putchar(c + '3');
 
-				if ( c == 9 || c != 9)
+				if (c == 9 || c != 9)
 				{
 					putchar(',');
 					putchar(' ');
