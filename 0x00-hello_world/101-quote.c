@@ -14,7 +14,7 @@ int main(void)
 	int i;
 
 
-	for (i = 0; i < wrd; i++)
+	for (i = 0; i < 58; i++)
 	{
 		putchar(wrd[i]);
 	}
