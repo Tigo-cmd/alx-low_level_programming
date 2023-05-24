@@ -7,7 +7,7 @@
 *
 * Return: (1) if alpha and (0) if othetwise
 */
-int _isalpha(int c);
+int _isalpha(int c)
 {
 	if (c >= 90 || c < 65)
 		return (0);
