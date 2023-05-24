@@ -1,13 +1,13 @@
 #include "main.h"
 /**
-* 7-print_last_digit.c - 
-* @param
-* @param
+* print_last_digit-  prints last digits
+* @c: first paramater
 *
-* Decsription: 
+* Decsription: function that prints the last digit of a number.
 * Return: Always(0) success
 */
-int print_last_digit(int);
+int print_last_digit(int c)
 {
-	
-} 
+	c = c % 10
+	return (0);
+}
