@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	char f[9] = "_putchar"
+	char f[9] = "_putchar";
 	int i;
 
 	while (i < 9)
@@ -19,5 +19,5 @@ int main(void)
 		i++;
 	}
 	_putchar('\n')
-	return (0);		
+	return (0);
 }
