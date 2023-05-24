@@ -14,13 +14,12 @@ echo "/**
 echo "Prototype>"
 read proto 
 echo $proto >> $file
-echo " $proto
-{
+echo "{
 	
 } " >> $file
-main0=$(mktemp)
-head -n -1 main.h > $main0
-echo $proto >> $main0
+touch main0
+head -n -1 main.h > main0
+echo $proto >> main0
 mv main0 main.h
 bash dirgit.sh
 gedit $file
