@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-* 1-alphabet.c - 
-* @i: starting point for the alphabeth.
+* print_alphabet - prints alpha
+* @i: first operand.
 *
 * Decsription: function that prints the alphabet,
 * in lowercase, followed by a new line
@@ -16,4 +16,4 @@ void print_alphabet(void)
 		_putchar(i);
 	}
 	_putchar('\n');
-} 
+}
