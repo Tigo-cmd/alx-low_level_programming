@@ -1,14 +1,13 @@
-#include "main.h"
+#include <stdio.h>
 /**
-* 0-putchar.c - 
-* @param
-* @param
+* main - Entry point
 *
-* Decsription: 
-* Return: Always(0) success
+* Description: A program 
+*
+* Return: 0(success)
 */
-0x02-functions_nested_loops
- 0x02-functions_nested_loops
+
+int main(void)
 {
-	
-} 
+	return (0);		
+}
