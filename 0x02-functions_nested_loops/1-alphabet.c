@@ -1,8 +1,7 @@
 #include "main.h"
 /**
 * print_alphabet - prints alpha
-* @i: first operand.
-*
+
 * Decsription: function that prints the alphabet,
 * in lowercase, followed by a new line
 * Return: Always(0) success
