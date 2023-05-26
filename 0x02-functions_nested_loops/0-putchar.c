@@ -16,7 +16,6 @@ int main(void)
 	while (i < 9)
 	{
 		i++;
-		f[i];
 		putchar(f[i]);
 	}
 	putchar('\n');
