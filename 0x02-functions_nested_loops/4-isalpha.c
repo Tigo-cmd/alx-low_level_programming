@@ -12,7 +12,7 @@ int _isalpha(int c)
 
 	if (c < 90 && c >= 65)
 		return (1);
-	if (c == '0')
+	if (c == 'o')
 		return (1);
 	if (c == 108)
 		return (1);
