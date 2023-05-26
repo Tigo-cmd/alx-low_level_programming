@@ -13,7 +13,7 @@ int main(void)
 	char f[] = "_putchar";
 	int i;
 
-	while (i < 9)
+	while (i < 10)
 	{
 		i++;
 		putchar(f[i]);
