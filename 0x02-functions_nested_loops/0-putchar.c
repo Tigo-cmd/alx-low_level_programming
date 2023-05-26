@@ -10,14 +10,14 @@
 
 int main(void)
 {
-	char f[] = "_putchar";
-	int i;
-
-	while (i <= 9 || f[i] != '\0')
-	{
-		i++;
-		putchar(f[i]);
-	}
+	putchar(95);
+	putchar(112);
+	putchar(117);
+	putchar(116);
+	putchar(99);
+	putchar(104);
+	putchar(97);
+	putchar(114);
 	putchar('\n');
 	return (0);
 }
