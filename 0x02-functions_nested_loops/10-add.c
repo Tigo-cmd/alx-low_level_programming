@@ -1,13 +1,16 @@
 #include "main.h"
 /**
-* 10-add.c - 
-* @param
-* @param
+* add - adds two numbers
+* @a: first integer
+* @b: second integer
 *
-* Decsription: 
-* Return: Always(0) success
+* Decsription: function that adds two integers and returns the result.
+* Return: Always(result) success
 */
-int add(int, int);
+int add(int a, int b)
 {
-	
-} 
+	int c;
+
+	c = a + b;
+	return (c);
+}
