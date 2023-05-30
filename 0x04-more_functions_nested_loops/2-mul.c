@@ -1,13 +1,17 @@
 #include "main.h"
 /**
-* 2-mul.c - 
-* @param
-* @param
+* mul - multiplies two integers
+* @a: first parameter
+* @b: second parameter
 *
-* Decsription: 
+* Decsription: function that multiplies two integers.
 * Return: Always(0) success
 */
 int mul(int a, int b);
 {
-	
-} 
+	int mull;
+
+	mull = a * b;
+
+	return (mull);
+}
