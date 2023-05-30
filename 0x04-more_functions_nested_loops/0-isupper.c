@@ -8,9 +8,13 @@
 */
 int _isupper(int c);
 {
-	if c <= 90 || c > 65)
+	char b
+	c = 0;
+	if b <= 90 || b > 65)
 	{
+		c = 1
 		return (1);
+	}
 	else
 		return (0);
 }
