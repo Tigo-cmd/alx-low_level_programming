@@ -8,16 +8,8 @@
 */
 int _isupper(int c);
 {
-	if (c < 90 && c >= 65)
-		return (1);
-	if (c == 'o')
-		return (1);
-	if (c == 108)
-		return (1);
-	if (c == 'i')
-		return (1);
-	if (c == 's')
-		return (1);
-	else
+	if (c <= 90 || > 65)
 		return (0);
-}
+	else
+		return (1);
+} 
