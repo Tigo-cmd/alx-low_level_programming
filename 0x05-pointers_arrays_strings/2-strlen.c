@@ -1,13 +1,19 @@
 #include "main.h"
 /**
-* 2-strlen.c - 
-* @param
-* @param
+* _strlen - returns the length of a string.
+* @s: first integer
 *
-* Decsription: 
-* Return: Always(0) success
+* Decsription: function that returns the length of a string.
+* Return: integer
 */
-int _strlen(char *s);
+int _strlen(char *s)
 {
-	
-} 
+	int l = 0;
+
+	while (*s != '\0')
+	{
+		l++;
+		s++;
+	}
+	return (l);
+}
