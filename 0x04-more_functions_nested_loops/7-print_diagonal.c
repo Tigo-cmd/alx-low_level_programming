@@ -1,13 +1,12 @@
 #include "main.h"
 /**
-* 7-print_diagonal.c - 
-* @param
-* @param
+* print_diagonal - draws a diagonal line
+* @n: first integer
 *
-* Decsription: 
+* Decsription: function that draws a diagonal line on the terminal.
 * Return: Always(0) success
 */
-void print_diagonal(int n);
+void print_diagonal(int n)
 {
 	
 } 
