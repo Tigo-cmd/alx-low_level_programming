@@ -7,7 +7,7 @@
 * followed by a new line, to stdout
 * Return: Always(0) success
 */
-void _puts(char *str);
+void _puts(char *str)
 {
 	int count;
 
