@@ -6,7 +6,7 @@
 * Decsription:  function that prints a square, followed by a new line.
 * Return: Always(0) success
 */
-void print_square(int size);
+void print_square(int size)
 {
 	int i, j;
 
