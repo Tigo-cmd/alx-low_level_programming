@@ -6,7 +6,7 @@
 * Decsription:  function that prints half of a string, followed by a new line.
 * Return: Always(0) success
 */
-void puts_half(char *str);
+void puts_half(char *str)
 {
 	int b = 0, mod;
 
