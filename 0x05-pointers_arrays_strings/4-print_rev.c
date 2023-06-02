@@ -16,4 +16,5 @@ void print_rev(char *s)
 		_putchar(s[count]);
 		s++;
 	}
+	_putchar('\n');
 }
