@@ -1,13 +1,21 @@
 #include "main.h"
 /**
-* 6-puts2.c - 
-* @param
-* @param
+* puts2 - function that prints every other character of a string
+* @str: pointer to array
 *
-* Decsription: 
-* Return: Always(0) success
+* Decsription:  function that prints every other
+* character of a string, starting with the first character,
+*				followed by a new line.
+* Return: Void
 */
-void puts2(char *str);
+void puts2(char *str)
 {
-	
-} 
+	int b;
+
+	while (str[b] != '\0')
+	{
+		_putchar(str[b]);
+		b++;
+		str++;
+	}
+}
