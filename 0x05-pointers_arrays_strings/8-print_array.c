@@ -8,7 +8,7 @@
 * an array of integers, followed by a new line.
 * Return: Always(0) success
 */
-void print_array(int *a, int n);
+void print_array(int *a, int n)
 {
 	int i;
 
