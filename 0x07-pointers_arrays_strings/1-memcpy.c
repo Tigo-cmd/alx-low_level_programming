@@ -14,9 +14,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 
 	while (n--)
 	{
-		*dest = *src;
-		*dest++;
-		*src++;
+		*dest++ = *src++;
 	}
 	return (ptr_dest);
 }
