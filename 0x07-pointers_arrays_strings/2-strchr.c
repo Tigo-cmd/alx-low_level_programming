@@ -7,7 +7,7 @@
 * Decsription: function that locates a character in a string.
 * Return: NULL
 */
-char *_strchr(char *s, char c);
+char *_strchr(char *s, char c)
 {
 	for (; s != '\0'; s++)
 	{
