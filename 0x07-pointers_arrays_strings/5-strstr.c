@@ -15,7 +15,7 @@ char *_strstr(char *haystack, char *needle)
 		return (haystack);
 	do {
 		char *init = haystack;
-		char *form = neddle;
+		char *form = needle;
 
 		do {
 			init++;
