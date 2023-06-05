@@ -15,6 +15,7 @@ char *_strspn(char *s, char *accept)
 	do {
 		j = 0;
 		char *p = accept;
+
 		do {
 			if (*s == *p)
 			{
@@ -22,11 +23,11 @@ char *_strspn(char *s, char *accept)
 				break;
 			}
 			p++;
-		}while (*p);
+		} while (*p);
 		if (!j)
 			break;
 		i++;
 		s++;
-	}while (*s);
-	return i;
+	} while (*s);
+	return (i);
 }
