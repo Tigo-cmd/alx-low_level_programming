@@ -13,7 +13,7 @@ char *_strpbrk(char *s, char *accept)
 		char *p = accept;
 
 		do {
-			if (*a == *s)
+			if (*p == *s)
 				return (s);
 			p++;
 		} while (*p);
