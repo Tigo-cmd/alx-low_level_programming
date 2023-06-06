@@ -7,7 +7,7 @@
 * Decsription: function that prints prefix of a string
 * Return: Always(0) success
 */
-char *_strspn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int i;
 
