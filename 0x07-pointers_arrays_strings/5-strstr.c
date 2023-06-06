@@ -23,7 +23,7 @@ char *_strstr(char *haystack, char *needle)
 		} while (*init && *form && *init == *form);
 		if (*form == '\0')
 			return (haystack);
-		haystack;
+		haystack++;
 	} while (*haystack);
 	return (NULL);
 }
