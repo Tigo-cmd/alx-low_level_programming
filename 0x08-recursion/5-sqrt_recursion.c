@@ -17,6 +17,7 @@ int _func(int p, int i)
 		return (-1);
 	else
 		return (_func(p, i + 1));
+}
 /**
 * _sqrt_recursion - returns the natural square root of a number.
 * @n: parameter
