@@ -1,13 +1,12 @@
 #include "main.h"
 /**
-* 1-print_rev_recursion.c - 
-* @param
-* @param
+* _print_rev_recursion - prints a string in reverse.
+* @s: first pointer
 *
-* Decsription: 
+* Decsription: function that prints a string in reverse.
 * Return: Always(0) success
 */
 void _print_rev_recursion(char *s);
 {
 	
-} 
+}
