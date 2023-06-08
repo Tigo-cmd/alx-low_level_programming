@@ -8,7 +8,7 @@
 *  factor other than 1 and itself
 * Return: Always(0) success
 */
-int _prime(int p, int div);
+int _prime(int p, int div)
 {
 	int b = div - 1;
 
@@ -29,7 +29,7 @@ int _prime(int p, int div);
 *  is a prime number, otherwise return 0.
 * Return: n
 */
-int is_prime_number(int n);
+int is_prime_number(int n)
 {
 	int din = n - 1;
 
