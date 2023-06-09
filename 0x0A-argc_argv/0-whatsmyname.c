@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
 * main - Entry point
-*
+* @argc: argument count
+* @argv: pointer to array of strings.
 * Description: A program returns the name of the program
 *
 * Return: 0(success)
