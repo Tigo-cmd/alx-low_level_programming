@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
 {
 	int j;
 
+	printf("%s\n", argv[0]);
 	if (argc > 1)
 	{
 		for (j = 0; j < argc; j++)
