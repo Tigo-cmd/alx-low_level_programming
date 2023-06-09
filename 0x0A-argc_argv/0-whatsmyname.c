@@ -2,12 +2,12 @@
 /**
 * main - Entry point
 *
-* Description: A program 
+* Description: A program returns the name of the program
 *
 * Return: 0(success)
 */
 
-int main(void)
+int main(int argc, char *argv[])
 {
-	return (0);		
+	printf("%s", argv[0]);
 }
