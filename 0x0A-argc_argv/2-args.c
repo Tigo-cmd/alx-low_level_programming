@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	{
 		for (j = 0; j < argc; j++)
 		{
-			printf("%s\n", argv[i]);
+			printf("%s\n", argv[j]);
 		}
 	}
 
