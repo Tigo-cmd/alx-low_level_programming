@@ -16,13 +16,13 @@ int main(int argc, char *argv[])
 
 	if (argc <= 1)
 		printf("0\n");
-	for (argc_count = 1; argc_Count < argc; argc_count++)
+	for (argc_Count = 1; argc_Count < argc; argc_Count++)
 	{
 		int array_Count = 0;
 
 		while (argv[argc_Count][array_Count] != '\0')
 		{
-			if (isalpha(argv[argc_Count][array_Count])
+			if (isalpha(argv[argc_Count][array_Count]))
 			{
 				printf("Error\n");
 				return (1);
