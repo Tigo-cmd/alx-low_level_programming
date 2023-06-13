@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
 * main - Entry point
 * @argc: initialized counter
@@ -13,9 +14,9 @@
 int main(int argc, char *argv[])
 {
 	int div, i, small = 0;
-	int cent[] = {25, 10, 5, 2, 1}
+	int cent[] = {25, 10, 5, 2, 1};
 
-	argc = argc - 1 /* argc is set to 0 */
+	argc += -1; /* argc is set to 0 */
 
 	if (argc == 1)
 	{
