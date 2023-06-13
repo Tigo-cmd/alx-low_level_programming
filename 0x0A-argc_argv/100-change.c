@@ -1,13 +1,42 @@
 #include <stdio.h>
 /**
 * main - Entry point
+* @argc: initialized counter
+* @argv: array pointer
 *
-* Description: A program 
+* Description: A program that prints the minimum
+* number of coins to make change for an amount of money.
 *
 * Return: 0(success)
 */
 
-int main(void)
+int main(int argc, char *argv[])
 {
-	return (0);		
+	int div, i, small = 0;
+	int cent[] = {25, 10, 5, 2, 1}
+
+	argc = argc - 1 /* argc is set to 0 */
+
+	if (argc == 1)
+	{
+		div = atoi(argv[1]);
+
+		if (div < 0)
+		{
+			printf("0\n");
+			return (0);
+		}
+		for (i = 0; cent[i] != '\0'; i++)
+		{
+			small = small + (div / cent[i]);
+			div = div % cent[i];
+		}
+		printf("%d\n", small);
+	}
+	else
+	{
+		printf("Error\n");
+		return (1);
+	}
+	return (0);
 }
