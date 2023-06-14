@@ -7,7 +7,7 @@
 * memory, which contains a copy of the string given as a parameter.
 * Return: pointer of the new string
 */
-char *_strdup(char *str);
+char *_strdup(char *str)
 {
 	char *str2;
 	int i = 0, b = 0;
