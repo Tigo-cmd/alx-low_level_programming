@@ -12,6 +12,7 @@ char *str_concat(char *s1, char *s2)
 {
 	char *p;
 	int a, b, i, j, sum;
+
 	if (s1 == NULL)
 		return (NULL);
 	if (s2 == NULL)
