@@ -13,9 +13,7 @@ char *str_concat(char *s1, char *s2)
 	char *p;
 	int a, b, i, j, sum;
 
-	if (s1 == NULL)
-		return ("");
-	if (s2 == NULL)
+	if (s1 == NULL || s2 == NULL)
 		return ("");
 	i = 0;
 	while (s1[i] != '\0')
