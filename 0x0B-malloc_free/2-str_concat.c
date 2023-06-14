@@ -14,36 +14,31 @@ char *str_concat(char *s1, char *s2)
 	int a, b, i, j, sum;
 
 	if (s1 == NULL)
-		return (NULL);
+		return ("");
 	if (s2 == NULL)
-		return (NULL);
+		return ("");
 	i = 0;
-
 	while (s1[i] != '\0')
 	{
 		i++;
 	}
 	j = 0;
-
 	while (s2[j] != '\0')
 	{
 		j++;
 	}
 	sum = i + j;
-
 	p = (char *)malloc((sum * sizeof(char)) + 1);
 
 	if (p == NULL)
 		return (NULL);
 	a = 0;
-
 	while (a < i)
 	{
 		p[a] = s1[a];
 		a++;
 	}
 	b = 0;
-
 	while (b < j)
 	{
 		p[a + b] = s2[b];
