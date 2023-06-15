@@ -25,10 +25,16 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		j++;
 	}
+	if (n < j)
+	{
+		j = n;
+		sum = j + i;
+		p = malloc(sum + 1);
+	}
 	if (n >= j)
 	{
 		sum = j + i;
-		p = malloc((sum + 1) * sizeof(char));
+		p = malloc(sum + 1);
 	}
 	if (p == NULL)
 		return (NULL);
