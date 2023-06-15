@@ -1,7 +1,8 @@
 #include "main.h"
+#include <stdlib.h>
 /**
 * malloc_checked - allocates memory using malloc.
-* @b: number of mrmory to be allocated
+* @b: number of memory to be allocated
 *
 * Decsription:  function that allocates memory using malloc.
 * Return: pointer to allocated mem
