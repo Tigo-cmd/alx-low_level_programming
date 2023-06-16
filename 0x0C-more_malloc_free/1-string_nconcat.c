@@ -29,13 +29,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		j = n;
 		sum = j + i;
-		p = malloc(sum + 1);
 	}
 	if (n >= j)
 	{
 		sum = j + i;
-		p = malloc(sum + 1);
 	}
+	p = malloc(sum + 1);
 	if (p == NULL)
 		return (NULL);
 	for (a = 0; a < i; a++)
