@@ -19,4 +19,5 @@ void more_numbers(void)
 		}
 		d++;
 	}
+	_putchar('\n');
 }
