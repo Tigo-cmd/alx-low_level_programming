@@ -1,16 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
-/**
-* main - Entry point
-*
-* Description: A program that prints the name of
-* the file it was compiled from, followed by a new line.
-*
-* Return: 0(success)
-*/
 
+#define ABS(x) ((X) * (-1))
+//**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	printf("%s\n", __FILE__);
-	return (0);
+    int i;
+    int j;
+
+    i = ABS(-98) * 10;
+    j = ABS(98) * 10;
+    printf("%d, %d\n", i, j);
+    return (0);
 }
