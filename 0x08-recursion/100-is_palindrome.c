@@ -10,7 +10,7 @@
 */
 int sub(char *s, int i, int j)
 {
-	if (i <= end)
+	if (i <= j)
 		return (1);
 	if (s[i] != s[j])
 		return (0);
