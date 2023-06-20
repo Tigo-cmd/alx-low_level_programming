@@ -1,13 +1,14 @@
 #include "dog.h"
 /**
-* 5-free_dog.c - 
-* @param
-* @param
+* free_dog - frees @d
+* @d: dog to be freed
 *
-* Decsription: 
-* Return: Always(0) success
+* Decsription: function that frees @d
+* Return: nothing
 */
-void free_dog(dog_t *d);
+void free_dog(dog_t *d)
 {
-	
+	free(d->name);
+	free(d->owner);
+	free(d);
 }
