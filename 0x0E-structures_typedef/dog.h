@@ -5,7 +5,7 @@
 * @name: first attribute
 * @owner: second attribute
 * @age: last attribute
-
+*
 * Description: creates a dog like structure with name owner and the type
 */
 struct dog
