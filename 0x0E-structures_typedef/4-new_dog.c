@@ -9,7 +9,7 @@
 * Decsription: function that creates a new dog.
 * Return: Always(0) success
 */
-dog_t *new_dog(char *name, float age, char *owner);
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *p;
 
