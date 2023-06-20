@@ -2,7 +2,7 @@
 echo "file>"
 read file
 touch $file
-echo "#include \"main.h\"" > $file
+echo "#include \"dog.h\"" > $file
 echo "/**
 * $file - 
 * @param
@@ -25,4 +25,4 @@ mv main0 dog.h
 chmod 764 $file
 bash dirgit.sh
 gedit $file
-
+clear
