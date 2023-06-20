@@ -31,8 +31,8 @@ char *_copy(char *dest, char *src)
 	while (*src != '\0')
 	{
 		*dest = *src;
-		*dest++;
-		*src++;
+		dest++;
+		src++;
 	}
 	*dest = '\0';
 
@@ -56,11 +56,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 
 	p->name = malloc((_length(name) + 1) * sizeof(char));
-	p->owner = malloc(sizeof(char) * (_length(owner) + 1);
+	p->owner = malloc(sizeof(char) * (_length(owner) + 1));
 	if (p->owner == NULL || p->name == NULL)
 	{
 		free(p->name);
-		free(p->owner)
+		free(p->owner);
 		free(p);
 		return (NULL);
 	}
