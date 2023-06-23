@@ -42,7 +42,7 @@ void main_opcode(int num)
 
 	while (i < num)
 	{
-		printf("%02x ", f[i]);
+		printf("%02x ", f[i] & 0xFF);
 		if (i != num - 1)
 			printf(" ");
 		i++;
