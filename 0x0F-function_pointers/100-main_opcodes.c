@@ -7,9 +7,9 @@
 *
 * Return: 0(success)
 */
-void main_opcode(int num);
 int main(int argc, char *argv[])
 {
+	void main_opcode(int num);
 	int a;
 
 	argc = argc - 1; /*sets argc to 0 default*/
@@ -37,12 +37,14 @@ int main(int argc, char *argv[])
 
 void main_opcode(int num)
 {
-	int i;
+	int i = 0;
 	unsigned char *f = (unsigned char *)main;
 
 	while (i < num)
 	{
 		printf("%02x ", f[i]);
+		if (i != num - 1)
+			printf(" ");
 		i++;
 	}
 	printf("\n");
