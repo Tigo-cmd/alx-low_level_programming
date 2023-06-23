@@ -14,7 +14,7 @@ int op_add(int a, int b)
 }
 
 /**
-* op_add- returns the difference of a and b
+* op_sub- returns the difference of a and b
 * @a: first parameter
 * @b: second parameter
 *
@@ -26,19 +26,19 @@ int op_sub(int a, int b)
 }
 
 /**
-* op_add- returns the product of a and b
+* op_mull- returns the product of a and b
 * @a: first parameter
 * @b: second parameter
 *
 * Return: product of the integers.
 */
-int op_mul(int a, int b);
+int op_mul(int a, int b)
 {
 	return (a * b);
 }
 
 /**
-* op_add- returns the division of a by b
+* op_div- returns the division of a by b
 * @a: first parameter
 * @b: second parameter
 *
@@ -49,14 +49,14 @@ int op_div(int a, int b)
 	return (a / b);
 }
 
- /**
- * op_add- returns the remainder of the divisior of a by b
- * @a: first parameter
- * @b: second parameter
- *
- * Return: remainder of the division of the integers.
- */
- int op_mod(int a, int b)
- {
- 	return (a % b);
- }
+/**
+* op_mod- returns the remainder of the divisior of a by b
+* @a: first parameter
+* @b: second parameter
+*
+* Return: remainder of the division of the integers.
+*/
+int op_mod(int a, int b)
+{
+	return (a % b);
+}

@@ -1,9 +1,8 @@
 #include "3-calc.h"
 /**
 * get_op_func - selects the correct function to perform
-*                   the operation asked by the user
+* the operation asked by the user
 * @s: operator passed as argument to the program
-* @get_op_func: pointer to op_function
 *
 * Decsription:  function that selects the correct
 *           function to perform the operation asked by the user
@@ -27,5 +26,5 @@ int (*get_op_func(char *s))(int, int)
 		if (*s == *ops[i].op)
 			return (ops[i].f);
 	}
-	return NULL; 
+	return (NULL);
 }
