@@ -2,7 +2,8 @@
 #include <stdlib.h>
 /**
 * main - Entry point
-* @num: number of bytes
+* @argc: argument count
+* @argv: argument array
 * Description: A program that prints the opcodes of its own main function.
 *
 * Return: 0(success)
@@ -38,7 +39,7 @@ int main(int argc, char *argv[])
 void main_opcode(int num)
 {
 	int i = 0;
-	unsigned char *f = (unsigned char *)main;
+	char *f = (char *)main;
 
 	while (i < num)
 	{
