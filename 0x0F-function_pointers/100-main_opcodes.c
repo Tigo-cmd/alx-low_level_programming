@@ -47,4 +47,3 @@ void main_opcode(int num)
 	}
 	printf("\n");
 }
-}
