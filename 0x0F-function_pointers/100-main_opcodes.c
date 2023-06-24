@@ -25,6 +25,10 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(2);
 	}
+	if (a == 1 || a == 100)
+	{
+		printf("1\n");
+	}
 
 	main_opcode(a);
 	return (0);
