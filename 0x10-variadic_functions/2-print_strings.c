@@ -21,10 +21,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 	while (i < (int)n)
 	{
-		char *ugo = va_arg(ap, char *);
+		char *ugo = va_arg(ap, char*);
 
 		if (ugo == NULL)
-			ugo = "(nil)";
+			printf("(nil)");
 		else
 			printf("%s", ugo);
 		if (i == 1)
