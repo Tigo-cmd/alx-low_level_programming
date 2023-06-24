@@ -1,13 +1,12 @@
-#include <stdio.h>
-/**
-* main - Entry point
-*
-* Description: A program 
-*
-* Return: 0(success)
-*/
+#include "variadic_functions.h"
 
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	return (0);		
+    print_strings(", ", 2, "Jay", "Django");
+    return (0);
 }
