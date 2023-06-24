@@ -25,9 +25,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 		if (ugo == NULL)
 			ugo = "(nil)";
-		if (i == 1 && i != 0)
+		else
+			printf("%s", ugo);
+		if (i == 1)
 			printf("%s", separator);
-		printf("%s", ugo);
 		i++;
 	}
 	va_end(ap);
