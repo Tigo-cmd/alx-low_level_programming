@@ -15,7 +15,10 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	va_start(ap, n);
 	if (separator == NULL)
+	{
+		printf("\n");
 		return;
+	}
 	while (i < (int)n)
 	{
 		char *ugo = va_arg(ap, char *);
