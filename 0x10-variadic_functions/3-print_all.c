@@ -11,7 +11,6 @@ void print_all(const char * const format, ...)
 {
 	va_list ugo;
 
-	va_start(ugo, format);
 
 	int init;
 	int i;
@@ -19,6 +18,7 @@ void print_all(const char * const format, ...)
 	float f;
 	char *s;
 
+	va_start(ugo, format);
 	init = 0;
 	while (format[init])
 	{
