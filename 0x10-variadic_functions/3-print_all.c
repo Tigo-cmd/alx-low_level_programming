@@ -13,11 +13,12 @@ void print_all(const char * const format, ...)
 
 	va_start(ugo, format);
 
-	int init = 0, i;
+	int init, i;
 	char c;
 	float f;
 	char *s;
 
+	init = 0;
 	while (format[init])
 	{
 		switch (format[init])
