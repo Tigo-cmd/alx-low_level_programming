@@ -13,7 +13,8 @@ void print_all(const char * const format, ...)
 
 	va_start(ugo, format);
 
-	int init, i;
+	int init;
+	int i;
 	char c;
 	float f;
 	char *s;
