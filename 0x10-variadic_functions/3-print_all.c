@@ -1,13 +1,50 @@
 #include "variadic_functions.h"
+#include <stdarg.h>
 /**
-* 3-print_all.c - 
-* @param
-* @param
+* print_all - prints anything according to the format
+* @format: list of types of argument passed to the function
 *
-* Decsription: 
-* Return: Always(0) success
+* Decsription: function that prints anything
+* Return: Nothing
 */
-void print_all(const char 0-sum_them_all.c 1-print_numbers.c 2-main.c 2-print_strings.c 3-print_all.c cfxn.sh dirgit.sh dirmain.sh filecreate.sh README.md variadic_functions.h const format, ...);
+void print_all(const char * const format, ...)
 {
-	
+	va_list ugo;
+
+	va_start(ugo, format);
+
+	int init = 0, i;
+	char c;
+	float f;
+	char *s;
+
+	while (format[init])
+	{
+		switch (format[init])
+		{
+			case 'c':
+				c = va_arg(ugo, int);
+				printf("%c, ", c);
+				break;
+			case 'i':
+				i = va_arg(ugo, int);
+				printf("%d, ", i);
+				break;
+			case 'f':
+				f = va_arg(ugo, double);
+				printf("%f, ", f);
+				break;
+			case 's':
+				s = va_arg(ugo, char *);
+				if (s == NULL)
+					s = "(nil)";
+				printf("%s", s);
+				break;
+			default:
+				break;
+		}
+		++init;
+	}
+	printf("\n");
+	va_end(ugo);
 }
