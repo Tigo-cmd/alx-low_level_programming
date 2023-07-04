@@ -2,7 +2,7 @@
 echo "file>"
 read file
 touch $file
-echo "#include \"list.h\"" > $file
+echo "#include \"lists.h\"" > $file
 echo "/**
 * $file - 
 * @param
@@ -18,10 +18,10 @@ echo "{
 	
 }" >> $file
 touch main0
-head -n -1 list.h > main0
+head -n -1 lists.h > main0
 echo $proto >> main0
 echo "#endif" >> main0
-mv main0 list.h
+mv main0 lists.h
 chmod 764 $file
 bash dirgit.sh
 gedit $file
