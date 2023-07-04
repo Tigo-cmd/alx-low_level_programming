@@ -1,13 +1,19 @@
 #include "list.h"
 /**
-* 1-list_len.c - 
-* @param
-* @param
+* list_len - returns nummber of element in a linked list
+* @h: list to be counted
 *
-* Decsription: 
-* Return: Always(0) success
+* Return: number of elements
 */
-size_t list_len(const list_t *h);
+size_t list_len(const list_t *h)
 {
-	
+	list_h *begin = (list_h *)h;
+	size_t i = 0;
+
+	while (begin != NULL)
+	{
+		begin = begin->next;
+		i++;
+	}
+	return (i);
 }
