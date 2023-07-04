@@ -18,6 +18,12 @@ list_t *add_node_end(list_t **head, const char *str)
 	while (str[i] != '\0')
 		i++;
 	p->str = strdup((char *)str);
+	if (p->str == NULL)
+	{
+		free(p)
+		return (NULL);
+	}
+	p->len = i;
 	p->next = NULL;
 
 	if (*head == NULL)
