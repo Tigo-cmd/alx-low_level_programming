@@ -19,7 +19,7 @@ size_t print_list(const list_t *h)
 			begin->str = "(nil)";
 			begin->len = 0;
 		}
-		else if (begin->str != NULL)
+		else if (begin->str != NULL && begin->len == 0)
 		{
 			while (begin->str[b] != '\0')
 			{
