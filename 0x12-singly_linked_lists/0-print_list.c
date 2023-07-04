@@ -10,6 +10,7 @@ size_t print_list(const list_t *h)
 {
 	list_t *begin = (list_t *)h;
 	size_t i = 0;
+	int b = 0;
 
 	while (begin != NULL)
 	{
@@ -18,10 +19,17 @@ size_t print_list(const list_t *h)
 			begin->str = "(nil)";
 			begin->len = 0;
 		}
+		else if (begin->str != NULL)
+		{
+			while (begin->str[b] != '\0')
+			{
+				b++;
+			}
+		}
+		begin->len = b;
 		printf("[%d] %s\n", begin->len, begin->str);
 		begin = begin->next;
 		i++;
 	}
 	return (i);
-	_putchar('\n');
 }

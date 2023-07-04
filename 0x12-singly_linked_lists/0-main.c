@@ -20,7 +20,6 @@ int main(void)
         return (1);
     }
     new->str = strdup("Hello");
-    new->len = 5;
     new->next = head;
     head = new;
     n = print_list(head);
