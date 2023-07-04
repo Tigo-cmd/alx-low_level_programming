@@ -8,6 +8,10 @@
 */
 list_t *add_node(list_t **head, const char *str)
 {
+	if (head == NULL || str == NULL)
+	{
+		return (NULL);
+	}
 	list_t *r = (list_t *)malloc(sizeof(list_t));
 
 	if (r == NULL)
@@ -15,6 +19,11 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 	r->str = strdup((char *)str);
+	if (r->str == NULL)
+	{
+		free(r);
+		return (NULL);
+	}
 	r->next = *head;
 	*head = r;
 
