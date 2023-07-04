@@ -8,11 +8,12 @@
 */
 list_t *add_node(list_t **head, const char *str)
 {
+	list_t *r = (list_t *)malloc(sizeof(list_t));
+
 	if (head == NULL || str == NULL)
 	{
 		return (NULL);
 	}
-	list_t *r = (list_t *)malloc(sizeof(list_t));
 
 	if (r == NULL)
 	{
