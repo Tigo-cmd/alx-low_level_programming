@@ -12,8 +12,8 @@ listint_t *add_nodeint(listint_t **head, const int n)
 
 	if (p == NULL)
 		return (NULL);
-	p->n = (int *)n;
-	if (p->n == NULL)
+	p->n = n;
+	if (!p->n)
 	{
 		free(p);
 		return (NULL);
