@@ -1,13 +1,19 @@
 #include "lists.h"
 /**
-* 4-free_listint.c - 
-* @param
-* @param
-*
-* Decsription: 
+* free_listint - frees a listint_t list
+* @head: pointer to first list to be freed
 * Return: Always(0) success
 */
-void free_listint(listint_t *head);
+void free_listint(listint_t *head)
 {
-	
+	listint_t *p  = head;
+	listint_t *new;
+
+	while (p != NULL)
+	{
+		new = p->next;
+		free(p->n);
+		free(p);
+		p = new;
+	}
 }
