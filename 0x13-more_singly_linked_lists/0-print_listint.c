@@ -1,13 +1,21 @@
 #include "lists.h"
 /**
-* 0-print_listint.c - 
-* @param
-* @param
+* print_listint - prints all element of a listint_t
+* @h: pointer to structure (inherited)
 *
-* Decsription: 
-* Return: Always(0) success
+* Return: number of nodes
 */
-size_t print_listint(const listint_t *h);
+size_t print_listint(const listint_t *h)
 {
-	
+	size_t i = 0;
+
+	listint_t *p = (listint_t *)h;
+
+	while (p != NULL)
+	{
+		printf("%d\n", p->n);
+		p = p->next;
+		i++;
+	}
+	return (i);
 }
