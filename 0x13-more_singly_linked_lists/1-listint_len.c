@@ -1,13 +1,20 @@
 #include "lists.h"
 /**
-* 1-listint_len.c - 
-* @param
-* @param
+* listint_len - returns the element in a linked listint_t list
+* @h: struct with int members to be printed
 *
-* Decsription: 
-* Return: Always(0) success
+* Return: number of elements
 */
-size_t listint_len(const listint_t *h);
+size_t listint_len(const listint_t *h)
 {
-	
+	size_t i = 0;
+
+	if (h == NULL)
+		return (0);
+	while (h != NULL)
+	{
+		h = h->next;
+		i++;
+	}
+	return (i);
 }
