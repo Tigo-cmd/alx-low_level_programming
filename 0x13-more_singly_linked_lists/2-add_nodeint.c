@@ -1,13 +1,24 @@
 #include "lists.h"
 /**
-* 2-add_nodeint.c - 
-* @param
-* @param
+* add_nodeint - adds a node at the begining of a listint_t list
+* @head: pointer to first node
+* @n: int to be copied
 *
-* Decsription: 
-* Return: Always(0) success
+* Return: address of the new element or Null if failed
 */
-listint_t *add_nodeint(listint_t **head, const int n);
+listint_t *add_nodeint(listint_t **head, const int n)
 {
-	
+	listint_t *p = (listint_t *)malloc(sizeof(listint_t));
+
+	if (p == NULL)
+		return (NULL);
+	p->n = (int *)n;
+	if (p->n == NULL)
+	{
+		free(p);
+		return (NULL);
+	}
+	p->next = *head;
+	*head = p;
+	return (p);
 }
