@@ -1,13 +1,15 @@
 #include "lists.h"
 /**
-* 4-free_list.c - 
-* @param
-* @param
+* free_list - function tha frees a list_t list
+* @head: first node of the list
 *
-* Decsription: 
-* Return: Always(0) success
+* Return: nothing
 */
-void free_list(list_t *head);
+void free_list(list_t *head)
 {
-	
+	if (head != NULL)
+	{
+		free(head->str)
+		free(head);
+	}
 }
