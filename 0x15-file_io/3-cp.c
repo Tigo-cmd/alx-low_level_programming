@@ -29,7 +29,7 @@ int main(int ac, char **av)
 	}
 	file = open(av[1], O_RDONLY);
 	rd2 = read(file, buff, 1024);
-	if (av[1] == NULL || rd <= 0 || file == -1)
+	if (av[1] == NULL || rd2 <= 0 || file == -1)
 	{
 		close(file);
 		dprintf(2, "Error: can't read file from file %s\n", av[1]);
