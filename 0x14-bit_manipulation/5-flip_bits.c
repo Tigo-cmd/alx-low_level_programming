@@ -1,13 +1,20 @@
 #include "main.h"
 /**
-* 5-flip_bits.c - 
-* @param
-* @param
+* flip_bits - returns the number of bits you
+* would need to flip to get from one number to another.
+* @n: first param
+* @m: second param
 *
-* Decsription: 
-* Return: Always(0) success
+* Return: no of bits
 */
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
 {
-	
+	unsigned long int tot = n ^ m;
+	unsigned long int ite = 0;
+
+	for (; tot != 0; tot = tot >> 1)
+	{
+		ite = ite + (tot & 1);
+	}
+	return (ite);
 }
