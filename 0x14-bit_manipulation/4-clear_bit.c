@@ -1,13 +1,19 @@
 #include "main.h"
 /**
-* 4-clear_bit.c - 
-* @param
-* @param
+* clear_bit - clears a bit and sets it to 0
+* @n: bit to be cleared
+* @index: position of the bit
 *
-* Decsription: 
-* Return: Always(0) success
+* Return: i if sucess or -1 if failed
 */
 int clear_bit(unsigned long int *n, unsigned int index);
 {
-	
+	unsigned long int check = (sizeof(unsigned long int) * 8);
+
+	if (index >= check)
+	{
+		return (-1);
+	}
+	*n = *n & ~(1 << index);
+	return (1);
 }
