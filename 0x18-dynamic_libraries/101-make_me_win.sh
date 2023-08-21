@@ -1,0 +1,2 @@
+#!/bib/bash
+wget -P ..
