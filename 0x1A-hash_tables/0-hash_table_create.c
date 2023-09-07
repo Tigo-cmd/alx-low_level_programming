@@ -1,4 +1,4 @@
-#include "variadic_functions.h"
+#include "main.h"
 /**
 * hash_table_create - this creates a hash table
 * @size: no of nodes to implement the hash table
