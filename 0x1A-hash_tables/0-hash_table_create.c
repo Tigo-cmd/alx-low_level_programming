@@ -1,4 +1,4 @@
-#include "main.h"
+#include "hash_tables.h"
 /**
 * hash_table_create - this creates a hash table
 * @size: no of nodes to implement the hash table
