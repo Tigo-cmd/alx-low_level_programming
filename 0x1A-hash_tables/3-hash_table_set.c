@@ -14,16 +14,20 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (ht == NULL)
 	{
-		return (NULL);
+		return (0);
 	}
 	if (key == NULL)
 	{
-		return (NULL);
+		return (0);
+	}
+	if (value == NULL)
+	{
+		return (0);
 	}
 	dup_value = strdup(value);
 	if (dup_value == NULL)
 		return (0);
-	x = key_index((unsigned char *)key, ht->size);
+	x = key_index((const unsigned char *)key, ht->size);
 	for (i = x; ht->array[i]; i++)
 	{
 		if (strcmp(ht->array[i]->key, key) == 0)
