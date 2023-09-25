@@ -16,7 +16,7 @@ read proto
 echo $proto >> $file
 echo "{
 	
-} " >> $file
+}" >> $file
 touch hash_tables0
 head -n -1 hash_tables.h > hash_tables0
 echo $proto >> hash_tables0
