@@ -17,11 +17,11 @@ echo $proto >> $file
 echo "{
 	
 }" >> $file
-touch hash_tables0
-head -n -1 hash_tables.h > hash_tables0
-echo $proto >> hash_tables0
-echo "#endif" >> hash_tables0
-mv hash_tables0 hash_tables.h
+touch main0
+head -n -1 hash_tables.h > main0
+echo $proto >> main0
+echo "#endif" >> main0
+mv main0 hash_tables.h
 chmod 764 $file
 bash dirgit.sh
 gedit $file
