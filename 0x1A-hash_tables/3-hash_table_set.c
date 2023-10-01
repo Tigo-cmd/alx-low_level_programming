@@ -1,7 +1,8 @@
 #include "hash_tables.h"
 /**
 * hash_table_set - adds element to the hash table
-* @set: a non empty string
+* @ht: hash table
+* @key: a non empty string
 * @value:  key value pair
 *
 * Return: Always(0) success
@@ -13,17 +14,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	char *dup_value;
 
 	if (ht == NULL)
-	{
 		return (0);
-	}
 	if (key == NULL)
-	{
 		return (0);
-	}
 	if (value == NULL)
-	{
-	return (0);
-	}
+		return (0);
 	dup_value = strdup(value);
 	if (dup_value == NULL)
 		return (0);
@@ -52,6 +47,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new_node->value = dup_value;
 	new_node->next = ht->array[x];
 	ht->array[x] = new_node;
-	
+
 	return (1);
-} 
+}
