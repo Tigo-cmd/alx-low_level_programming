@@ -1,10 +1,11 @@
 #Makefile for school exec
 SRC = main.c school.c
 CC = gcc
-OBJ = *.o
+OBJ = $(SRC:.c=.o)
 NAME = school
+
 all: $(NAME)
 
-$(NAME): $(SRC)
-	$(CC) -o $(OBJ) $(SRC)
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 
