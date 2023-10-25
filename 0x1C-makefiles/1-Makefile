@@ -1,8 +1,8 @@
 #Makefile for school exec
 SRC = main.c school.c
-CC = gcc -o school main.c school.c
+CC = gcc -o school main.c
 
 all: school
 
-school: SRC
-	CC
+school: $(SRC)
+	$(CC)
